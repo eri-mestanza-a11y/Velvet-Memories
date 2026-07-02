@@ -447,3 +447,24 @@ font-size:16px;
 }
 
 }
+/* Animaciones */
+
+.card,
+.testimonio,
+.galeria img,
+section h2,
+.hero .overlay {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.mostrar {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+nav a.activo {
+    color: #d4af37;
+    font-weight: bold;
+}
