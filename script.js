@@ -4,6 +4,38 @@
 ========================== */
 
 // ==========================
+// ACTIVAR SONIDO DEL VIDEO
+// ==========================
+
+const botonSonido = document.getElementById("activar-sonido");
+const ytPlayer = document.getElementById("ytplayer");
+
+if (botonSonido && ytPlayer) {
+
+    botonSonido.addEventListener("click", () => {
+
+        ytPlayer.contentWindow.postMessage(
+            JSON.stringify({ event: "command", func: "unMute", args: [] }),
+            "*"
+        );
+
+        ytPlayer.contentWindow.postMessage(
+            JSON.stringify({ event: "command", func: "setVolume", args: [100] }),
+            "*"
+        );
+
+        ytPlayer.contentWindow.postMessage(
+            JSON.stringify({ event: "command", func: "playVideo", args: [] }),
+            "*"
+        );
+
+        botonSonido.classList.add("oculto");
+
+    });
+
+}
+
+// ==========================
 // BOTÓN VOLVER ARRIBA
 // ==========================
 
