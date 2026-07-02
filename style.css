@@ -1,0 +1,449 @@
+/* ==========================
+   VELVET MEMORIES
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#111;
+
+    color:#f5f1e8;
+
+    line-height:1.6;
+
+}
+
+/* HEADER */
+
+header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:rgba(0,0,0,.80);
+
+    backdrop-filter:blur(8px);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #c7a76c;
+
+}
+
+.logo h2{
+
+    font-family:'Cinzel',serif;
+
+    color:#d4af37;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#d4af37;
+
+}
+
+/* HERO */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.65),
+
+    rgba(0,0,0,.75)),
+
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1600")
+
+    center/cover;
+
+}
+
+.overlay{
+
+    max-width:750px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    color:#d4af37;
+
+    font-family:'Cinzel',serif;
+
+}
+
+.hero p{
+
+    margin:25px 0;
+
+    font-size:18px;
+
+}
+
+.boton{
+
+    background:#d4af37;
+
+    color:#111;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+.boton:hover{
+
+    background:#f0cf6b;
+
+}
+
+/* SECCIONES */
+
+section{
+
+    padding:90px 8%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    color:#d4af37;
+
+    font-family:'Cinzel',serif;
+
+}
+
+/* SERVICIOS */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:#1d1d1d;
+
+    border:1px solid #c7a76c;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 25px rgba(212,175,55,.35);
+
+}
+
+.card i{
+
+    font-size:45px;
+
+    color:#d4af37;
+
+    margin-bottom:20px;
+
+}
+
+/* GALERÍA */
+
+.galeria{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+.galeria img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    transition:.5s;
+
+    border:4px solid #c7a76c;
+
+}
+
+.galeria img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* VIDEO */
+
+video{
+
+    width:100%;
+
+    max-width:900px;
+
+    display:block;
+
+    margin:auto;
+
+    border-radius:15px;
+
+    border:4px solid #d4af37;
+
+}
+
+/* TESTIMONIOS */
+
+.testimonios{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.testimonio{
+
+    background:#1d1d1d;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    border:1px solid #c7a76c;
+
+}
+
+/* CTA */
+
+.cta{
+
+    text-align:center;
+
+}
+
+.whatsapp{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:18px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#0b0b0b;
+
+    text-align:center;
+
+    padding:45px;
+
+}
+
+.redes{
+
+    margin:25px 0;
+
+}
+
+.redes a{
+
+    color:#d4af37;
+
+    font-size:28px;
+
+    margin:0 15px;
+
+    transition:.3s;
+
+}
+
+.redes a:hover{
+
+    color:white;
+
+}
+
+/* BOTÓN ARRIBA */
+
+#arriba{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#d4af37;
+
+    color:#111;
+
+    cursor:pointer;
+
+    display:none;
+
+    font-size:22px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+}
